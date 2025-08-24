@@ -25,6 +25,7 @@
     .profile-header {
       display: flex;
       align-items: center;
+      justify-content: space-around;
       padding: 30px;
       background: linear-gradient(135deg, #004aad, #0099cc);
       color: #fff;
@@ -54,12 +55,13 @@
     }
 
     .details h3 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       font-size: 20px;
       border-bottom: 2px solid #eee;
-      padding-bottom: 8px;
+      /* padding-bottom: 8px; */
       color: #333;
     }
+
 
     .info-grid {
       display: grid;
@@ -178,6 +180,69 @@
   font-weight: bold;
 }
 
+/* existing desktop/tablet styles remain same */
+
+/* 📱 Mobile version */
+@media (max-width: 600px) {
+  .payouts {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 12px;
+  }
+
+  .profile-header h2{
+    font-size: 20px;
+  }
+  .profile-header p {
+    font-size: 12px;
+  }
+
+  /* .payouts table,
+  .payouts thead,
+  .payouts tbody,
+  .payouts th,
+  .payouts td,
+  .payouts tr {
+    display: block;
+    width: 100%;
+  } */
+
+  .payouts thead {
+    display: none; /* hide table header on phone */
+  }
+
+  .payouts tbody tr {
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #fff;
+  }
+
+  /* .payouts tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: none;
+  } */
+
+  .payouts tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+  }
+
+  .payouts .status-paid,
+  .payouts .status-pending,
+  .payouts .status-failed {
+    font-size: 14px;
+  }
+}
+
+
 .total {
   margin-top: 15px;
   text-align: right;
@@ -204,7 +269,7 @@
       background: #eee;
       border-radius: 10px;
       overflow: hidden;
-      height: 20px;
+      height: 25px;
       margin: 10px 0;
     }
 
@@ -215,38 +280,54 @@
       transition: width 0.5s ease;
     }
 
-    .achievements {
-      margin-top: 15px;
+    .totalpoint{
+      width: 300px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: flex-start;
     }
 
     .achievement {
-      padding: 10px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      background: #f9fafc;
-    }
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: transform 0.3s, background 0.3s;
+}
 
-    .achievement.unlocked {
-      background: #e0ffe0;
-      border: 1px solid #00c853;
-      font-weight: bold;
-      color: #006622;
-    }
+.achievement:hover {
+  transform: scale(1.02);
+  background: #f0f8ff;
+}
+
+.achievement.unlocked {
+  border-color: #4caf50;
+  background: #e8f5e9;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.achievement p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
 
     /* Badge */
     .badge {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-weight: bold;
-      color: #fff;
+      border-radius: 0 !important;
+      border: none !important;
+      width: auto !important;
+      height: 250px !important;
+      margin: 0 !important;
     }
-    .bronze { background: #cd7f32; }
-    .silver { background: #c0c0c0; color: #000; }
-    .gold { background: #ffd700; color: #000; }
-
+    
+    .badge-block{
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     /* Note Box */
     .note-box {
       margin-top: 15px;
@@ -289,3 +370,16 @@
         margin-bottom: 15px;
       }
     }
+
+
+  .responsive-img {
+    width: 300px; /* default for larger screens */
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* For phone screens (max width 600px) */
+  @media (max-width: 600px) {
+    .responsive-img {
+      width: 120px;
+    }
+  }

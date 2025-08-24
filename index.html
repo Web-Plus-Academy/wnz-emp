@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employee Portal</title>
+  <title>Partners Portal</title>
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #000000, #003185);
       color: #fff;
       margin: 0;
       padding: 0;
@@ -28,6 +28,7 @@
     h1 {
       font-size: 2rem;
       margin-bottom: 20px;
+      margin-top: 20px;
     }
     input {
       padding: 10px 15px;
@@ -56,6 +57,13 @@
       color: #ffbaba;
       margin-top: 10px;
     }
+    .powered{
+      /* border: 2px solid red; */
+      width: 100px;
+      font-size: 10px;
+      font-weight: bold;
+      margin-top: 50px;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -64,18 +72,21 @@
 </head>
 <body>
   <div class="search-container">
-    <h1>🔍 Employee Search</h1>
+    <img src="./nameboard.png" width="300px" alt="">
+    <h1>Partners Progress</h1>
     <input type="text" id="employeeId" placeholder="Enter Employee ID">
     <br>
     <button onclick="searchEmployee()">Search</button>
     <p id="error"></p>
+    <div class="powered">powered by</div>
+    <img src="./Frame 15.png" width="200px" alt="">
   </div>
 
   <script>
     // Dummy Employees
     const employees = {
-      "WNZ0001": "emp.html?empId=WNZ0001",
-      "WNZ0002": "emp.html?empId=WNZ0002",
+      "WNSR01": "emp.html?empId=WNSR01",
+      "WNSR02": "emp.html?empId=WNSR02",
     };
 
     function searchEmployee() {

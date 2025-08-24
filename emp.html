@@ -3,39 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Employee Profile - MNC Style</title>
+  <title>Partners Profile</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="header">
-    <h1>Employee Portal</h1>
+    <div style="font-weight: bold; text-decoration: underline;">Partners Portal</div>
+    <img src="./nameboard.png" class="responsive-img" alt="">
+    <img src="./Frame 15.png" class="responsive-img" alt="">
   </div>
 
   <div class="container">
     <div class="profile-header">
-      <img src="https://i.pravatar.cc/150?img=3" alt="Employee Photo">
       <div>
-        <h2>Saran Velmurugan</h2>
-        <p>Senior Software Engineer | Full Stack Development</p>
+        <img src="" alt="Partner Photo">
+        <h2> </h2>
+        <p></p>
       </div>
+      <div id="badgeContainer"></div>
     </div>
 
     <div class="details">
       <h3>Employee Information</h3>
       <div class="info-grid">
-        <div class="info-item"><strong>Employee ID</strong><span>EMP-10245</span></div>
-        <div class="info-item"><strong>Department</strong><span>Engineering</span></div>
-        <div class="info-item"><strong>Email</strong><span>saran@example.com</span></div>
-        <div class="info-item"><strong>Phone</strong><span>+91 98765 43210</span></div>
-        <div class="info-item"><strong>Location</strong><span>Bangalore, India</span></div>
+        <div class="info-item"><strong>Employee ID</strong><span></span></div>
+        <!-- <div class="info-item"><strong>Department</strong><span>Engineering</span></div> -->
+        <div class="info-item"><strong>Email</strong><span></span></div>
+        <div class="info-item"><strong>Phone</strong><span></span></div>
+        <div class="info-item"><strong>Location</strong><span></span></div>
       </div>
 
       <!-- Task Tracker -->
       <h3>Task Tracker & Achievements</h3>
       <div class="task-tracker">
-        <p><strong>Total Points:</strong> <span id="points">0</span></p>
-        <div id="badgeContainer"></div> <!-- Badge here -->
-        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill">
+          <b class="totalpoint"> <strong>Total Points:</strong> <span id="points">0</span> </b>
+        </div></div>
         <div class="achievements" id="achievements"></div>
         <div class="note-box">
           Note: 
