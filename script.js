@@ -2,7 +2,7 @@
   const employees = {
     "WNSR01": {
       name: "Mandapalli Deva Sai Nandini",
-      role: "Cyber Security Trainer | Campus ambassador",
+      role: "Cyber Security Trainer | SWPA - Partner",
       email: "devasainandinimandapalli@gmail.com",
       phone: "+91 9392194979",
       location: "2-250-C-6-1, Madanapalle, Andhra Pradesh",
@@ -10,22 +10,22 @@
       payouts: [
         { month: "September 2025", amount: 2800, status: "Pending" }
       ],
-      points: 10
+      points: 0
     },
     "WNSR02": {
-      name: "Priya R",
-      role: "UI/UX Designer",
+      name: "Bhavya Reddy S",
+      role: "Event Orgainzer | SWPA - Partner",
       // department: "Design",
-      email: "priya@example.com",
-      phone: "+91 98765 11111",
-      location: "Chennai, India",
-      photo: "https://i.pravatar.cc/150?img=5",
+      email: "somuhoneybhavya123@gmail.com",
+      phone: "+91 9381141351",
+      location: "Kadapa, Khajipet, Kotha Nellore, Pincode:516163",
+      photo: "https://res.cloudinary.com/dqg8ameoa/image/upload/v1756230666/unnamed_oihfpx.jpg",
       payouts: [
-        { month: "January 2025", amount: 60000, status: "Paid" },
-        { month: "February 2025", amount: 60500, status: "Paid" },
-        { month: "March 2025", amount: 61000, status: "Pending" }
+        // { month: "January 2025", amount: 60000, status: "Paid" },
+        // { month: "February 2025", amount: 60500, status: "Paid" },
+        // { month: "March 2025", amount: 61000, status: "Pending" }
       ],
-      points: 1100
+      points: 0
     }
   };
 
