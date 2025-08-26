@@ -26,6 +26,21 @@
         // { month: "March 2025", amount: 61000, status: "Pending" }
       ],
       points: 0
+    },
+    "WNSR03": {
+      name: "Rachamalla Bilvini ",
+      role: "WNZ - SWPA - Partner",
+      // department: "Design",
+      email: "bilvinirachamalla@gmail.com",
+      phone: "+91 8019812906",
+      location: "Address:5-45 , Rotarypuram, Anantapur, Andhra Pradesh",
+      photo: "https://res.cloudinary.com/dqg8ameoa/image/upload/v1756231551/01_mpturk.jpg",
+      payouts: [
+        // { month: "January 2025", amount: 60000, status: "Paid" },
+        // { month: "February 2025", amount: 60500, status: "Paid" },
+        // { month: "March 2025", amount: 61000, status: "Pending" }
+      ],
+      points: 0
     }
   };
 
