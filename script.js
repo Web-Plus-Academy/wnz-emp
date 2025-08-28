@@ -33,12 +33,27 @@
       // department: "Design",
       email: "bilvinirachamalla@gmail.com",
       phone: "+91 8019812906",
-      location: "Address:5-45 , Rotarypuram, Anantapur, Andhra Pradesh",
+      location: "5-45 , Rotarypuram, Anantapur, Andhra Pradesh",
       photo: "https://res.cloudinary.com/dqg8ameoa/image/upload/v1756231551/01_mpturk.jpg",
       payouts: [
-        // { month: "January 2025", amount: 60000, status: "Paid" },
+        // { month: "May 2025", amount: 1000, status: "Paid" },
         // { month: "February 2025", amount: 60500, status: "Paid" },
         // { month: "March 2025", amount: 61000, status: "Pending" }
+      ],
+      points: 0
+    },
+    "WNSR04": {
+      name: "Tarigonda Pranathi",
+      role: "AI/ML Trainer | SWPA - Partner",
+      // department: "Design",
+      email: "prreddy247@gmail.com",
+      phone: "+91 6304779005",
+      location: "Vasavi Nagar, Puttur, Andhra Pradesh",
+      photo: "https://saredufywpa.com/images/teamMembers/pranati.jpg",
+      payouts: [
+        { month: "May 2025", amount: 10000, status: "Paid" },
+        { month: "June 2025", amount: 10000, status: "Paid" },
+        { month: "July 2025", amount: 5000, status: "Paid" }
       ],
       points: 0
     }
@@ -301,31 +316,59 @@ orderedRewards.forEach(reward => {
 
 
 // Badge logic
-if (emp.points >= 2000) {
+if (emp.points >= 57800) {
   badge = `<img class="badge" src="./badges/gold.png" alt="Gold Badge" width="80">`;
   progressText = "You’ve unlocked the highest badge 🎉";
   progressPercent = 100;
-  showPopup("🎉 Congratulations! You unlocked the 'Gold Badge' 🏆");
-} else if (emp.points >= 1000) {
+  showPopup("🌟 Congratulations! You unlocked the 'RUBY League' ✨");
+} 
+else if (emp.points >= 37800) {
   badge = `<img class="badge" src="./badges/bronze3.png" alt="Silver Badge" width="100">`;
   progressPercent = Math.floor((emp.points / 2000) * 100);
-  progressText = `${progressPercent}% progress towards Gold Badge`;
+  progressText = `${progressPercent}% progress towards Gold League`;
 
-  if (emp.points === 1000) {
-    showPopup("🥈 Congratulations! You unlocked the **Silver Badge** 🎊");
+  if (emp.points === 37800) {
+    showPopup("💎 Congratulations! You unlocked the 'Diamond League' 🎊");
   }
-} else if (emp.points >= 100) {
+} 
+else if (emp.points >= 13800) {
+  badge = `<img class="badge" src="./badges/bronze3.png" alt="Silver Badge" width="100">`;
+  progressPercent = Math.floor((emp.points / 2000) * 100);
+  progressText = `${progressPercent}% progress towards Gold League`;
+
+  if (emp.points === 13800) {
+    showPopup("🩶 Congratulations! You unlocked the 'Platinum League' 🥳");
+  }
+} 
+else if (emp.points >= 4100) {
+  badge = `<img class="badge" src="./badges/bronze3.png" alt="Silver Badge" width="100">`;
+  progressPercent = Math.floor((emp.points / 2000) * 100);
+  progressText = `${progressPercent}% progress towards Gold League`;
+
+  if (emp.points === 4100) {
+    showPopup("🥇 Congratulations! You unlocked the 'Gold League' 🏆");
+  }
+} 
+else if (emp.points >= 1600) {
+  badge = `<img class="badge" src="./badges/bronze3.png" alt="Silver Badge" width="100">`;
+  progressPercent = Math.floor((emp.points / 2000) * 100);
+  progressText = `${progressPercent}% progress towards Gold League`;
+
+  if (emp.points === 1600) {
+    showPopup("🥈 Congratulations! You unlocked the 'Silver League' 🎊");
+  }
+} else if (emp.points >= 300) {
   badge = `<img class="badge" src="./badges/bronze.png" alt="Bronze Badge" width="80">`;
   progressPercent = Math.floor((emp.points / 1000) * 100);
-  progressText = `${progressPercent}% progress towards Silver Badge`;
+  progressText = `${progressPercent}% progress towards Silver League`;
 
-  if (emp.points === 100) {
-    showPopup("🥉 Congratulations! You unlocked the **Bronze Badge** 🎊");
+  if (emp.points === 300) {
+    showPopup("🥉 Congratulations! You unlocked the 'Bronze League' 🎊");
   }
 } else {
   badge = `<img class="badge" src="./badges/bronze1.png" alt="Starter Badge" width="70">`;
   progressPercent = Math.floor((emp.points / 100) * 100);
-  progressText = `${progressPercent}% progress towards Bronze Badge`;
+  progressText = `${progressPercent}% progress towards Bronze League`;
 }
 
 
